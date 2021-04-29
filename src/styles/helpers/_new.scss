@@ -1,0 +1,114 @@
+@import 'variables';
+
+.new {
+  margin: 0;
+  padding: 60px 0;
+  background-color: $bg-light;
+
+  &__container {
+    width: $width-max;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #998431;
+    border-left: none;
+    border-right: none;
+    padding: 60px 0;
+  }
+
+  &__content {
+    margin: 0;
+    max-width: 445px;
+    display: flex;
+    flex-direction: column;
+    color: $bg-dark;
+  }
+
+  &__subtitle {
+    margin: 0 0 30px;
+    font-size: 16px;
+    line-height: 150%;
+    color: $black;
+  }
+
+  &__title {
+    margin: 0 0 30px;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 150%;
+  }
+
+  &__line {
+    margin: 0 0 30px;
+    background-color: $bg-dark;
+    width: 160px;
+    border-top: 1px solid $bg-dark;
+  }
+
+  &__text {
+    margin: 0;
+    font-size: 14px;
+    line-height: 150%;
+  }
+
+  &__table {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0;
+  }
+
+  &__table__item {
+    display: flex;
+    border-bottom: 1px solid $bg-dark;
+  }
+
+  &__table__item:last-child {
+    border: none;
+  }
+
+  &__age {
+    margin: 0;
+    padding: 25px;
+    font-size: 14px;
+    line-height: 150%;
+    border-right: 1px solid $bg-dark;
+  }
+
+  &__table__content {
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+  }
+
+  &__table__title {
+    margin: 20px 0 5px;
+    font-family: Playfair Display;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 150%;
+  }
+
+  &__table__desc {
+    margin: 0 0 15px;
+    font-size: 14px;
+    line-height: 150%;
+  }
+
+  &__btn {
+    margin: 30px 0 0;
+    max-width: 255px;
+  }
+
+  &__photos {
+    max-width: 540px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__image:first-child {
+    margin: 0 0 30px;
+  }
+
+  &__image:nth-child(2) {
+    margin: 0 30px 0 0;
+  }
+}

@@ -1,0 +1,44 @@
+const path = require("path");
+const webpack = require("webpack");
+
+module.exports = {
+    entry: {
+        main: "./src/scripts/index.js",
+    },
+
+    output: {
+        filename: "[name].js",
+        chunkFilename: "[name].js",
+        publicPath: "/"
+    },
+
+    optimization: {
+        splitChunks: {
+            cacheGroups: {
+                vendor: {
+                    test: /node_modules/,
+                    chunks: "initial",
+                    name: "vendor",
+                    enforce: true
+                }
+            }
+        }
+    },
+
+    module: {
+        rules: [
+            {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                use: {
+                    loader: "babel-loader",
+                    query: {
+                        presets: [
+                            ["@babel/preset-env", { modules: false }]
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+};

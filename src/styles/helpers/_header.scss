@@ -1,0 +1,64 @@
+@import 'variables';
+
+.header {
+  margin: 0;
+  padding: 30px 0 0;
+  background-color: inherit;
+
+  &__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__content {
+    width: 100%;
+    margin: 0 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 150%;
+    color: $white;
+  }
+
+  &__navbar {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid $white;
+    border-bottom: 1px solid $white;
+  }
+
+  &__list__item {
+    padding: 15px 115px;
+    border-right: 1px solid $white;
+  }
+
+  &__list__item:last-child {
+    border: none;
+  }
+
+  &__list__link {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: center;
+    color: $white;
+  }
+}

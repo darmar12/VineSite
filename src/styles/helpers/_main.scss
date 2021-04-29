@@ -1,0 +1,27 @@
+@import 'variables';
+
+.main {
+  min-height: 900px;
+  margin: 0;
+  padding: 0;
+  background: url(./../../img/images/main_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__container {
+    width: $width-max;
+  }
+
+  &__btns {
+    min-height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0 0 150px;
+  }
+
+  &__btn:first-child {
+    vertical-align: bottom;
+    margin: 0 30px 0 0;
+  }
+}

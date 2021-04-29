@@ -1,0 +1,15 @@
+doctype html
+html(lang='ru')
+  head
+    title Vine
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(name="description", content=pageDesc)
+    link(rel="stylesheet", type="text/css", href="./styles/app.css")
+  body
+    .wrapper#wrapper
+      include ./views/blocks/main.pug
+      include ./views/blocks/about.pug
+      include ./views/blocks/new.pug
+      include ./views/blocks/contact.pug
+      include ./views/blocks/footer.pug

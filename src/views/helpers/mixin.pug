@@ -1,0 +1,14 @@
+mixin footerNavbar(name)
+  li.footer__list__item
+    a(href="#").footer__list__link= name
+
+mixin headerNavbar(name)
+  li.header__list__item
+    a(href="#").header__list__link= name
+
+mixin newItem(age, title, desc)
+  .new__table__item
+    p.new__age= age
+    .new__table__content
+      h3.new__table__title= title
+      p.new__table__desc= desc

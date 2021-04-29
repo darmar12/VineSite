@@ -1,0 +1,138 @@
+@import 'variables';
+
+.contact {
+  margin: 0;
+  padding: 100px 0;
+  background-color: $bg-dark;
+
+  &__container {
+    width: $width-max;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #c4c4c4;
+    border-top: none;
+    padding: 0 0 80px;
+  }
+
+  &__content {
+    margin: 0 0 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__info {
+    max-width: 540px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__title {
+    position: relative;
+    font-family: Playfair Display;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 150%;
+    text-align: center;
+    color: $white;
+    margin: 0 0 40px;
+  }
+
+  &__title::before,
+  &__title::after {
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 2px;
+    background-color: #c4c4c4;
+  }
+
+  &__title::before {
+    top: 50%;
+    left: 0;
+    margin: 0 0 0 -55%;
+  }
+
+  &__title::after {
+    top: 50%;
+    right: 0;
+    margin: 0 -55% 0 0;
+  }
+
+  &__line {
+    opacity: 0.6;
+    margin: 0 0 40px;
+    height: 1px;
+    width: 118px;
+    border: none;
+    background-color: $white;
+  }
+
+  &__text {
+    margin: 0;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: $white;
+  }
+
+  &__border__image {
+    z-index: 3;
+  }
+
+  &__border__image:first-child {
+    margin: -10px 0 0 -10px;
+  }
+
+  &__border__image:last-child {
+    margin: -70px -50px 0 0;
+  }
+
+  &__form {
+    margin: 0 auto;
+    max-width: 540px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__input {
+    padding: 5px;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 150%;
+    color: $white;
+    background-color: inherit;
+    border: none;
+    border-bottom: 1px solid $white;
+  }
+
+  &__input::placeholder {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 150%;
+    color: $white;
+  }
+
+  &__input:first-child {
+    width: 255px;
+    margin: 0 30px 40px 0;
+  }
+
+  &__input:nth-child(2) {
+    margin: 0 0 40px 0;
+    width: 255px;
+  }
+
+  &__input:nth-child(3) {
+    width: 540px;
+  }
+
+  &__btn {
+    margin: 50px 0 0;
+    width: 100%;
+    background-color: inherit;
+    border: 1px solid $white;
+  }
+}

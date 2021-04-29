@@ -1,0 +1,54 @@
+@import 'fonts';
+@import 'variables';
+
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+
+  &:before {
+    box-sizing: inherit;
+  }
+
+  &:after {
+    box-sizing: inherit;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  width: 1920px;
+  margin: 0 auto;
+  padding: 0;
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 150%;
+  color: $white;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.btn {
+  padding: 15px 30px;
+  background-color: #99862a;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $white;
+  cursor: pointer;
+}
+
+@import 'helpers/all';

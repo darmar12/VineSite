@@ -1,0 +1,13 @@
+include ./../helpers/mixin.pug
+
+header.header
+  .container.header__container
+    .header__content
+      .header__text Новокузнечный переулок 4/1
+      .header__text 8 (812) 123-45-67
+    nav.header__navbar
+      ul.header__list
+        +headerNavbar('Каталог')
+        +headerNavbar('Доставка')
+        +headerNavbar('Коллекции')
+        +headerNavbar('Контакты')
